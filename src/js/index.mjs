@@ -11,11 +11,11 @@ console.log('Salad Ingredients:', salad);
 console.log('DISHES:');
 
 console.log('Salad:');
-mixSalad();
+console.log(mixSalad());
 
 console.log('Breakfasts:');
 omeletteSideAlmonds();
 salmonFiletSideAlmonds();
 
 console.log('Lunch:');
-chickenAndGreens();
+chickenAndGreens('broccoli');

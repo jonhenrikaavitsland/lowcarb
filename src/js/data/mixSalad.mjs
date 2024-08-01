@@ -42,6 +42,5 @@ export function mixSalad() {
     },
     ingredients: mixedSaladIngredients,
   };
-  console.log('Mixed Salad:', finalSalad);
   return finalSalad;
 }
