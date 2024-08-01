@@ -138,5 +138,21 @@ export const ingredients = {
       gramPiece: 300,
       sizePiece: 'medium',
     },
+    {
+      name: 'mixed salad with red cherry tomatoes, cucumber, grapes, red onion, yellow or red pepper, beetroot and celeriac',
+      price: {
+        perKg: 79.8,
+        currency: 'nok',
+      },
+      macros: {
+        grams: 100,
+        kcal: 0,
+        protein: 0,
+        fats: 0,
+        carbohydrates: 0,
+      },
+      gramPiece: 300,
+      sizePiece: 'medium',
+    },
   ],
 };
