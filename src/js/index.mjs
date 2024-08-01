@@ -3,6 +3,7 @@ import { ingredients } from './foods/ingredients.mjs';
 import { salad } from './foods/salad.mjs';
 import { omeletteSideAlmonds } from './meals/breakfast/omeletteSideAlmonds.mjs';
 import { salmonFiletSideAlmonds } from './meals/breakfast/salmonFiletSideAlmonds.mjs';
+import { barbecueRibsSweetPotato } from './meals/dinner/barbecueRibsSweetPotato.mjs';
 import { chickenSweetPotato } from './meals/dinner/chickenSweetPotato.mjs';
 import { barbecueRibsAndGreens } from './meals/lunch/barbecueRibsAndGreens.mjs';
 import { chickenAndGreens } from './meals/lunch/chickenAndGreens.mjs';
@@ -25,3 +26,4 @@ barbecueRibsAndGreens('brussels sprouts');
 
 console.log('Dinner');
 chickenSweetPotato('asparagus beans');
+barbecueRibsSweetPotato('broccoli');

@@ -39,5 +39,11 @@ export function makeDish(dishName, includeSalad, ...ingredientObjects) {
     dish.macros.protein += salad.totalMacros.fats;
     dish.macros.carbohydrates += salad.totalMacros.carbohydrates;
   }
+
+  dish.macros.kcal = parseFloat(dish.macros.kcal.toFixed(2));
+  dish.macros.protein = parseFloat(dish.macros.protein.toFixed(2));
+  dish.macros.fats = parseFloat(dish.macros.fats.toFixed(2));
+  dish.macros.carbohydrates = parseFloat(dish.macros.carbohydrates.toFixed(2));
+
   return dish;
 }
