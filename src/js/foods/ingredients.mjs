@@ -65,7 +65,7 @@ export const ingredients = {
   ],
   vegetables: [
     {
-      name: 'frozen broccoli',
+      name: 'broccoli',
       price: {
         perKg: 44.89,
         currency: 'nok',
@@ -79,7 +79,7 @@ export const ingredients = {
       },
     },
     {
-      name: 'frozen brussels sprouts',
+      name: 'brussels sprouts',
       price: {
         perKg: 48.5,
         currency: 'nok',
@@ -93,7 +93,7 @@ export const ingredients = {
       },
     },
     {
-      name: 'frozen asparagus beans',
+      name: 'asparagus beans',
       price: {
         perKg: 76.67,
         currency: 'nok',

@@ -2,7 +2,6 @@ import { findIngredientsByName } from '../../data/findIngredientsByName.mjs';
 
 export function portionChicken(portionSize) {
   const chicken = findIngredientsByName('chicken');
-  console.log('Chicken', chicken);
 
   if (!chicken) {
     throw new Error('Chicken not found in ingredients');
@@ -32,6 +31,5 @@ export function portionChicken(portionSize) {
       },
     ],
   };
-  console.log(portionedChicken);
   return portionedChicken;
 }
