@@ -18,7 +18,7 @@ export function mixSalad() {
   salad.forEach((ingredient) => {
     const pricePer = pricePerIngredient(ingredient);
     const macrosPerPiece = macrosPerIngredient(ingredient);
-    const newIngredient = newIngredientObject(ingredient, pricePer, macrosPerPiece);
+    const newIngredient = newIngredientObject(ingredient, pricePer, macrosPerPiece, 0.25);
 
     totalMacros.kcal += macrosPerPiece.kcal;
     totalMacros.protein += macrosPerPiece.protein;

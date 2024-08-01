@@ -6,9 +6,11 @@ import { salmonFiletSideAlmonds } from './meals/breakfast/salmonFiletSideAlmonds
 
 console.log('foods:', ingredients);
 console.log('Salad Ingredients:', salad);
-console.log('SALAD:', mixSalad());
 
 console.log('DISHES:');
+
+console.log('Salad:');
+mixSalad();
 
 console.log('Breakfasts:');
 omeletteSideAlmonds();
