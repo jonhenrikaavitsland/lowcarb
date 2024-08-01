@@ -2,7 +2,6 @@ import { findIngredientsByName } from '../../data/findIngredientsByName.mjs';
 
 export function chopSalmon(amount) {
   const salmon = findIngredientsByName('salmon');
-  console.log(salmon);
 
   if (!salmon) {
     throw new Error('Salmon not found in ingredients.');

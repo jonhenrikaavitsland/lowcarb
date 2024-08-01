@@ -2,7 +2,6 @@ import { findIngredientsByName } from '../../data/findIngredientsByName.mjs';
 
 export function addGreen(green) {
   const vegetable = findIngredientsByName(green);
-  console.log('*', vegetable);
 
   if (!vegetable) {
     throw new Error(`${green} not found in ingredients.`);
