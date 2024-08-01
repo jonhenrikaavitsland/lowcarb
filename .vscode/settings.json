@@ -5,5 +5,6 @@
     "source.fixAll.eslint": "always"
   },
   "eslint.validate": ["javascript"],
-  "cSpell.words": ["Carb"]
+  "cSpell.words": ["Carb"],
+  "prettier.printWidth": 500
 }
