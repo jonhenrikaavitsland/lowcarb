@@ -4,6 +4,7 @@ import { salad } from './foods/salad.mjs';
 import { omeletteSideAlmonds } from './meals/breakfast/omeletteSideAlmonds.mjs';
 import { salmonFiletSideAlmonds } from './meals/breakfast/salmonFiletSideAlmonds.mjs';
 import { chickenSweetPotato } from './meals/dinner/chickenSweetPotato.mjs';
+import { barbecueRibsAndGreens } from './meals/lunch/barbecueRibsAndGreens.mjs';
 import { chickenAndGreens } from './meals/lunch/chickenAndGreens.mjs';
 
 console.log('foods:', ingredients);
@@ -20,6 +21,7 @@ salmonFiletSideAlmonds();
 
 console.log('Lunch:');
 chickenAndGreens('broccoli');
+barbecueRibsAndGreens('brussels sprouts');
 
 console.log('Dinner');
 chickenSweetPotato('asparagus beans');

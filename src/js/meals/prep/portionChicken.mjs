@@ -27,7 +27,7 @@ export function portionChicken(portionSize) {
     ingredients: [
       {
         name: 'portion of chicken',
-        grams: 300,
+        grams: portionSize,
       },
     ],
   };
