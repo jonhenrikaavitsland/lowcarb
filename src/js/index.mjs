@@ -3,6 +3,7 @@ import { ingredients } from './foods/ingredients.mjs';
 import { salad } from './foods/salad.mjs';
 import { omeletteSideAlmonds } from './meals/breakfast/omeletteSideAlmonds.mjs';
 import { salmonFiletSideAlmonds } from './meals/breakfast/salmonFiletSideAlmonds.mjs';
+import { chickenSweetPotato } from './meals/dinner/chickenSweetPotato.mjs';
 import { chickenAndGreens } from './meals/lunch/chickenAndGreens.mjs';
 
 console.log('foods:', ingredients);
@@ -19,3 +20,6 @@ salmonFiletSideAlmonds();
 
 console.log('Lunch:');
 chickenAndGreens('broccoli');
+
+console.log('Dinner');
+chickenSweetPotato('asparagus beans');
