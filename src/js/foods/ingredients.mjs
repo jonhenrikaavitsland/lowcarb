@@ -44,6 +44,90 @@ export const ingredients = {
         carbohydrates: 0,
       },
     },
+    {
+      name: 'barbecue ribs',
+      price: {
+        perKg: 118.63,
+        currency: 'nok',
+      },
+      macros: {
+        grams: 100,
+        kcal: 382,
+        protein: 14,
+        fats: 36,
+        carbohydrates: 0,
+      },
+    },
+    {
+      name: 'neck chops',
+      price: {
+        perKg: 83.9,
+        currency: 'nok',
+      },
+      macros: {
+        grams: 100,
+        kcal: 206,
+        protein: 18.3,
+        fats: 14.8,
+        carbohydrates: 0.1,
+      },
+    },
+    {
+      name: 'pork chops',
+      price: {
+        perKg: 87.28,
+        currency: 'nok',
+      },
+      macros: {
+        grams: 100,
+        kcal: 244,
+        protein: 20,
+        fats: 18,
+        carbohydrates: 0,
+      },
+    },
+    {
+      name: 'beef pepper steak',
+      price: {
+        perKg: 372.82,
+        currency: 'nok',
+      },
+      macros: {
+        grams: 100,
+        kcal: 111,
+        protein: 22,
+        fats: 2.3,
+        carbohydrates: 0,
+      },
+    },
+    {
+      name: 'entrecote',
+      price: {
+        perKg: 427.6,
+        currency: 'nok',
+      },
+      macros: {
+        grams: 100,
+        kcal: 186,
+        protein: 20.6,
+        fats: 11.5,
+        carbohydrates: 0,
+      },
+    },
+    {
+      name: 'pollock',
+      price: {
+        perKg: 231.5,
+        currency: 'nok',
+      },
+      macros: {
+        grams: 100,
+        kcal: 69,
+        protein: 16.5,
+        fats: 0.3,
+        carbohydrates: 0,
+      },
+    },
   ],
   nuts: [
     {
