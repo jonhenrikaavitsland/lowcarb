@@ -1,6 +1,6 @@
-import { makeDish } from '../../../data/makeDish.mjs';
-import { addNuts } from '../../prep/addNuts.mjs';
-import { chopSalmon } from '../../prep/chopSalmon.mjs';
+import { makeDish } from '../../data/makeDish.mjs';
+import { addNuts } from '../prep/addNuts.mjs';
+import { chopSalmon } from '../prep/chopSalmon.mjs';
 
 export function salmonFiletSideAlmonds() {
   const salmon = chopSalmon(250);
