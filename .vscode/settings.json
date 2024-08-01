@@ -5,6 +5,6 @@
     "source.fixAll.eslint": "always"
   },
   "eslint.validate": ["javascript"],
-  "cSpell.words": ["Carb"],
+  "cSpell.words": ["aavitsland", "Åvitsland", "Carb", "mochawesome", "tailwindcss"],
   "prettier.printWidth": 500
 }
