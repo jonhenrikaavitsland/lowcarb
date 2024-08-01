@@ -17,7 +17,7 @@ export const ingredients = {
       sizePiece: 'medium',
     },
     {
-      name: 'fresh salmon filet',
+      name: 'salmon',
       price: {
         perKg: 279.6,
         currency: 'nok',

@@ -32,13 +32,13 @@ export function mixSalad() {
 
   const finalSalad = {
     name: 'Mixed Salad',
-    servings: 4,
-    totalPrice: parseFloat(priceTotal.toFixed(2)),
+    servings: 1,
+    totalPrice: parseFloat((priceTotal / 4).toFixed(2)),
     totalMacros: {
-      kcal: parseFloat(totalMacros.kcal.toFixed(2)),
-      protein: parseFloat(totalMacros.protein.toFixed(2)),
-      fats: parseFloat(totalMacros.fats.toFixed(2)),
-      carbohydrates: parseFloat(totalMacros.carbohydrates.toFixed(2)),
+      kcal: parseFloat((totalMacros.kcal / 4).toFixed(2)),
+      protein: parseFloat((totalMacros.protein / 4).toFixed(2)),
+      fats: parseFloat((totalMacros.fats / 4).toFixed(2)),
+      carbohydrates: parseFloat((totalMacros.carbohydrates / 4).toFixed(2)),
     },
     ingredients: mixedSaladIngredients,
   };
