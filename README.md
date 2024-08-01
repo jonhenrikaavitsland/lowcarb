@@ -1,10 +1,13 @@
-# This is a environment set up for my future projects
+# Low Carb Meal Planner
 
-## Steps:
-- rename gitignore to .gitignore
-- drag all files from within the aavitsland-starter folder into your project folder root if you decide to use this environment.
-- click to replace existing package file, then rename project name. 
-- create a .github folder and move workflows folder inside.
-- npm i
-- if you have a .husky folder, delete it before running next step!
-- npx mrm@2 lint-staged
+A personal project, for personal use. 
+
+The planner will allow me to put together my meals on a daily basis or for a longer period of time.
+
+## Benefits I want to get out of this project:
+
+1. I want to motivate my self
+2. I want to make sure I stay within budget when I plan my meals. 
+3. I want to ensure my macros are good. 
+4. I want to be able to create a "to the point" shopping list.
+
