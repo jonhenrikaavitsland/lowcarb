@@ -3,22 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This is my personal low carb meal planner, a little side project"
-    />
-    <link
-      rel="shortcut icon"
-      href="./src/assets/favicon.svg"
-      type="image/x-icon"
-    />
+    <meta name="description" content="This is my personal low carb meal planner, a little side project" />
+    <link rel="shortcut icon" href="./src/assets/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./src/index.css" />
     <script type="module" src="./src/js/index.mjs"></script>
     <title>Home | My Low Carb</title>
   </head>
-  <body>
-    <header class="py-5 mx-auto">
-      <h1 class="text-3xl">Low carb meal planner</h1>
-    </header>
+  <body class="bg-sky-200 h-screen flex flex-col">
+    <header class="py-5 mx-auto"></header>
+    <main class="flex flex-col grow justify-center">
+      <div class="bg-sky-50 mx-auto w-5/6 rounded-md shadow shadow-sky-950">
+        <h1 class="text-4xl capitalize font-semibold text-center py-8">Low carb meal planner</h1>
+        <div class="p-3 text-center">
+          <p class="text-2xl">What time period are you planning for?</p>
+          <div class="flex gap-10 justify-center p-10" data-planner="planningContainer">
+            <div>
+              <button class="p-4 bg-emerald-700 text-sky-50 rounded-xl w-40 text-xl uppercase shadow-emerald-500 shadow-md hover:bg-emerald-600 hover:shadow-green-700" data-planner="1-day">1 Day</button>
+            </div>
+            <div>
+              <button class="p-4 bg-emerald-700 text-sky-50 rounded-xl w-40 text-xl uppercase shadow-emerald-500 shadow-md hover:bg-emerald-600 hover:shadow-green-700" data-planner="7-day">7 days</button>
+            </div>
+            <div>
+              <button class="p-4 bg-emerald-700 text-sky-50 rounded-xl w-40 text-xl uppercase shadow-emerald-500 shadow-md hover:bg-emerald-600 hover:shadow-green-700" data-planner="28-day">28 days</button>
+            </div>
+          </div>
+        </div>
+        <div class="p-10">
+          <h3 class="text-xl font-semibold">Notes:</h3>
+          <p>The meal planner is a project of mine.</p>
+          <p>It allows to plan meals for a day, 7 days or 28 days.</p>
+          <p>The data given by the meal planner are not quality controlled and should not be trusted for any real use.</p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
