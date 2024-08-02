@@ -1,0 +1,13 @@
+# Priority List:
+
+1. Refactor ingredients lists so that they all look the same. 
+2. Refactor functions to just have one function that prepares portion size and creates a same object for all ingredients. 
+3. Make function to compile dish and then make one file menu.mjs and inside we will store all menu options in variables, and on them run the function to compile the meal. 
+4. Complete all meals
+5. Ensure all stats are correct, prices etc. 
+6. Build out the html document. 
+7. Add placeholder images for cards. 
+8. Make it possible to choose breakfast, lunch and dinner for each day for up to 28 days and then give a total for macros, price and give option for creating a shopping list,
+options are per 1 day, 7 days and 28 days.
+9. Over time add images as you create the dishes
+10. If happy, put on portfolio
