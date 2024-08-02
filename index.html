@@ -10,30 +10,77 @@
     <title>Home | My Low Carb</title>
   </head>
   <body class="bg-sky-200 h-screen flex flex-col">
-    <header class="py-5 mx-auto"></header>
-    <main class="flex flex-col grow justify-center">
-      <div class="bg-sky-50 mx-auto w-5/6 rounded-md shadow shadow-sky-950">
-        <h1 class="text-4xl capitalize font-semibold text-center py-8">Low carb meal planner</h1>
-        <div class="p-3 text-center">
-          <p class="text-2xl">What time period are you planning for?</p>
-          <div class="flex gap-10 justify-center p-10" data-planner="planningContainer">
-            <div>
-              <button class="p-4 bg-emerald-700 text-sky-50 rounded-xl w-40 text-xl uppercase shadow-emerald-500 shadow-md hover:bg-emerald-600 hover:shadow-green-700" data-planner="1-day">1 Day</button>
+    <main class="grow flex flex-col justify-center">
+      <div class="bg-sky-950 text-white w-5/6 mx-auto rounded-lg p-5 shadow-md shadow-sky-700">
+        <section class="py-5 text-center uppercase font-bold text-4xl">
+          <h1>My meal planner</h1>
+        </section>
+        <div class="flex py-5 px-12 justify-between gap-5">
+          <div class="flex flex-col bg-sky-900 py-5 px-8 rounded-md shadow-md shadow-sky-700">
+            <div class="mx-auto">
+              <img src="#" alt="breakfast" height="150" width="150" class="bg-sky-200" />
             </div>
-            <div>
-              <button class="p-4 bg-emerald-700 text-sky-50 rounded-xl w-40 text-xl uppercase shadow-emerald-500 shadow-md hover:bg-emerald-600 hover:shadow-green-700" data-planner="7-day">7 days</button>
+            <section class="flex flex-col text-center">
+              <h2 class="text-xl underline p-2" data-planner="breakfast">Breakfast</h2>
+              <span><span class="font-semibold">Kcal:</span></span>
+              <span><span class="font-semibold">Protein:</span></span>
+              <span><span class="font-semibold">Fats:</span></span>
+              <span><span class="font-semibold">Carbs:</span></span>
+              <span class="pt-5"><span class="font-semibold">Price:</span></span>
+            </section>
+          </div>
+          <div class="flex flex-col bg-sky-900 py-5 px-8 rounded-md shadow-md shadow-sky-700">
+            <div class="mx-auto">
+              <img src="#" alt="breakfast" height="150" width="150" class="bg-sky-200" />
             </div>
-            <div>
-              <button class="p-4 bg-emerald-700 text-sky-50 rounded-xl w-40 text-xl uppercase shadow-emerald-500 shadow-md hover:bg-emerald-600 hover:shadow-green-700" data-planner="28-day">28 days</button>
+            <section class="flex flex-col text-center">
+              <h2 class="text-xl underline p-2" data-planner="lunch">Lunch</h2>
+              <span><span class="font-semibold">Kcal:</span></span>
+              <span><span class="font-semibold">Protein:</span></span>
+              <span><span class="font-semibold">Fats:</span></span>
+              <span><span class="font-semibold">Carbs:</span></span>
+              <span class="pt-5"><span class="font-semibold">Price:</span></span>
+            </section>
+          </div>
+          <div class="flex flex-col bg-sky-900 py-5 px-8 rounded-md shadow-md shadow-sky-700">
+            <div class="mx-auto">
+              <img src="#" alt="breakfast" height="150" width="150" class="bg-sky-200" />
             </div>
+            <section class="flex flex-col text-center">
+              <h2 class="text-xl underline p-2" data-planner="dinner">Dinner</h2>
+              <span><span class="font-semibold">Kcal:</span></span>
+              <span><span class="font-semibold">Protein:</span></span>
+              <span><span class="font-semibold">Fats:</span></span>
+              <span><span class="font-semibold">Carbs:</span></span>
+              <span class="pt-5"><span class="font-semibold">Price:</span></span>
+            </section>
           </div>
         </div>
-        <div class="p-10">
-          <h3 class="text-xl font-semibold">Notes:</h3>
-          <p>The meal planner is a project of mine.</p>
-          <p>It allows to plan meals for a day, 7 days or 28 days.</p>
-          <p>The data given by the meal planner are not quality controlled and should not be trusted for any real use.</p>
-        </div>
+        <section>
+          <h3 class="text-center p-10 text-2xl font-semibold">Your meal plan for the day looks like this:</h3>
+          <div class="flex justify-between p-12 gap-4">
+            <div class="flex flex-col">
+              <span><span class="font-semibold">Dinner:</span></span>
+              <span><span class="font-semibold">Meals:</span></span>
+              <span><span class="font-semibold">Breakfast:</span></span>
+              <span><span class="font-semibold">Lunch:</span></span>
+            </div>
+            <div class="flex flex-col">
+              <span><span class="font-semibold">Macros:</span></span>
+              <span><span class="font-semibold">Kcal:</span></span>
+              <span><span class="font-semibold">Protein:</span></span>
+              <span><span class="font-semibold">Fats:</span></span>
+              <span><span class="font-semibold">Carbs:</span></span>
+            </div>
+            <div class="flex flex-col">
+              <span><span class="font-semibold">Price:</span></span>
+              <span><span class="font-semibold">Total</span></span>
+            </div>
+          </div>
+          <div class="pt-10 pb-20 flex justify-center">
+            <button class="bg-sky-600 py-4 px-8 rounded-full uppercase font-semibold shadow-md shadow-sky-400 hover:bg-sky-500 hover:shadow-lg hover:shadow-sky-300">Get shopping list</button>
+          </div>
+        </section>
       </div>
     </main>
   </body>
