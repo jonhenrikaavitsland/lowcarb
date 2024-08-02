@@ -1,49 +1,82 @@
-import { mixSalad } from './mixSalad.mjs';
+import { mealContains } from '../ingredients/mealContains.mjs';
+import { assembleSalad } from './assembleSalad.mjs';
+import { calculateMacrosAndPrice } from './calculateMacrosAndPrice.mjs';
+import { findIngredientData } from './findIngredientData.mjs';
 
-export function makeDish(dishName, includeSalad, ...ingredientObjects) {
-  if (ingredientObjects.length > 4) {
-    throw new Error('A dish can contain at most 4 ingredients objects.');
+export function makeDish(mealName) {
+  const meal = mealContains.find((meal) => meal.name === mealName);
+
+  if (!meal) {
+    throw new Error(`Meal with name ${mealName} not found.`);
   }
 
   const dish = {
-    name: dishName,
+    name: meal.name,
     ingredients: [],
-    price: {
-      cost: 0,
-      currency: 'nok',
-    },
-    macros: {
+    totalMacros: {
       kcal: 0,
       protein: 0,
       fats: 0,
       carbohydrates: 0,
     },
+    totalPrice: 0,
   };
 
-  ingredientObjects.forEach((ingredientObject) => {
-    dish.ingredients.push(...ingredientObject.ingredients);
-    dish.price.cost += ingredientObject.price.cost;
-    dish.macros.kcal += ingredientObject.macros.kcal;
-    dish.macros.protein += ingredientObject.macros.protein;
-    dish.macros.fats += ingredientObject.macros.fats;
-    dish.macros.carbohydrates += ingredientObject.macros.carbohydrates;
-  });
+  for (let item of meal.contains) {
+    if (item.ingredient === 'mixed salad') {
+      const salad = assembleSalad();
+      const weightRatio = item.weight / 392;
 
-  if (includeSalad) {
-    const salad = mixSalad();
+      for (let saladItem of salad.ingredients) {
+        dish.ingredients.push({
+          name: saladItem.name,
+          weight: saladItem.weight * weightRatio,
+          macros: {
+            kcal: parseFloat((saladItem.macros.kcal * weightRatio).toFixed(2)),
+            protein: parseFloat((saladItem.macros.protein * weightRatio).toFixed(2)),
+            fats: parseFloat((saladItem.macros.fats * weightRatio).toFixed(2)),
+            carbohydrates: parseFloat((saladItem.macros.carbohydrates * weightRatio).toFixed(2)),
+          },
+        });
+      }
 
-    dish.ingredients.push(...salad.ingredients);
-    dish.price.cost += salad.totalPrice;
-    dish.macros.kcal += salad.totalMacros.kcal;
-    dish.macros.protein += salad.totalMacros.protein;
-    dish.macros.protein += salad.totalMacros.fats;
-    dish.macros.carbohydrates += salad.totalMacros.carbohydrates;
+      dish.totalMacros.kcal += salad.totalMacros.kcal * weightRatio;
+      dish.totalMacros.protein += salad.totalMacros.protein * weightRatio;
+      dish.totalMacros.fats += salad.totalMacros.fats * weightRatio;
+      dish.totalMacros.carbohydrates += salad.totalMacros.carbohydrates * weightRatio;
+      dish.totalPrice += salad.totalPrice * weightRatio;
+    } else {
+      const ingredientData = findIngredientData(item.ingredient);
+
+      if (!ingredientData) {
+        throw new Error(`Ingredient with name ${item.ingredient} not found.`);
+      }
+
+      const { price, macros } = calculateMacrosAndPrice(ingredientData, item.weight);
+
+      dish.ingredients.push({
+        name: item.ingredient,
+        weight: item.weight,
+        macros: {
+          kcal: parseFloat(macros.kcal.toFixed(2)),
+          protein: parseFloat(macros.protein.toFixed(2)),
+          fats: parseFloat(macros.fats.toFixed(2)),
+          carbohydrates: parseFloat(macros.carbohydrates.toFixed(2)),
+        },
+      });
+
+      dish.totalMacros.kcal += macros.kcal;
+      dish.totalMacros.protein += macros.protein;
+      dish.totalMacros.fats += macros.fats;
+      dish.totalMacros.carbohydrates += macros.carbohydrates;
+      dish.totalPrice += price;
+    }
   }
-
-  dish.macros.kcal = parseFloat(dish.macros.kcal.toFixed(2));
-  dish.macros.protein = parseFloat(dish.macros.protein.toFixed(2));
-  dish.macros.fats = parseFloat(dish.macros.fats.toFixed(2));
-  dish.macros.carbohydrates = parseFloat(dish.macros.carbohydrates.toFixed(2));
+  dish.totalMacros.kcal = parseFloat(dish.totalMacros.kcal.toFixed(2));
+  dish.totalMacros.protein = parseFloat(dish.totalMacros.protein.toFixed(2));
+  dish.totalMacros.fats = parseFloat(dish.totalMacros.fats.toFixed(2));
+  dish.totalMacros.carbohydrates = parseFloat(dish.totalMacros.carbohydrates.toFixed(2));
+  dish.totalPrice = parseFloat(dish.totalPrice.toFixed(2));
 
   return dish;
 }

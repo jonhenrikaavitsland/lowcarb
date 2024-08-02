@@ -187,7 +187,7 @@ export const ingredients = {
       portionSizes: [150],
     },
     {
-      name: 'fresh ripe avocado',
+      name: 'avocado',
       price: {
         perKg: 93.44,
         currency: 'nok',
