@@ -283,4 +283,22 @@ export const mealContains = [
       },
     ],
   },
+  {
+    name: 'omelette w/ broccoli, sweet potato on the side',
+    category: 'dinner',
+    contains: [
+      {
+        ingredient: 'entrecote',
+        weight: 250,
+      },
+      {
+        ingredient: 'sweet potato',
+        weight: 300,
+      },
+      {
+        ingredient: 'broccoli',
+        weight: 150,
+      },
+    ],
+  },
 ];
