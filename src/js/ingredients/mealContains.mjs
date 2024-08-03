@@ -288,7 +288,7 @@ export const mealContains = [
     category: 'dinner',
     contains: [
       {
-        ingredient: 'entrecote',
+        ingredient: 'egg',
         weight: 250,
       },
       {
