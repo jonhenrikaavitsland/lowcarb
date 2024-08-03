@@ -1,0 +1,16 @@
+# Change the html to be one page only. 
+
+## Use a form and drop down selects with options. 
+
+## Utilize local storage
+
+## Allow calculation of 1, 7, 14 and 28 days
+
+### Form flow: 
+
+1. Choose how many days to plan for
+2. pick breakfast, lunch and dinner for each
+3. when done, store choices and display total macros, and total price.
+4. Below each day, display macros and price.
+5. Allow to display a shopping list
+6. Pre-select when in storage.
