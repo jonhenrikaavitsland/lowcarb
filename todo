@@ -14,3 +14,15 @@
 4. Below each day, display macros and price.
 5. Allow to display a shopping list
 6. Pre-select when in storage.
+
+
+
+
+# on your starter package:
+
+- include gitignore
+- Make a storage folder for JS files including JSDocs.
+- Also write unit tests for the same files. 
+- These files will speed up your production later
+- They can be various function that are often used and so on comes handy. 
+- examples are various fetch functions, functions to create elements, storage functions, router etc.
