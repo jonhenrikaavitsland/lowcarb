@@ -12,6 +12,7 @@ export function processMeal(meal) {
 
   const mealDetails = {
     name: meal.name,
+    category: meal.category,
     ingredients: mealIngredients,
     macros: {
       kcal: parseFloat(totalMacros.kcal.toFixed(2)),
