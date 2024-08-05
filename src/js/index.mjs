@@ -1,12 +1,15 @@
 import { getMealsByCategory } from './data/getMealsByCategory.mjs';
+import { handleForm } from './planner/handleForm.mjs';
 
 console.log('MENU:');
 console.log('Breakfast Options:');
-const brekfasts = getMealsByCategory('breakfast');
-console.log(brekfasts);
+const brekfast = getMealsByCategory('breakfast');
+console.log(brekfast);
 console.log('Lunch Options:');
-const lunches = getMealsByCategory('lunch');
-console.log(lunches);
+const lunch = getMealsByCategory('lunch');
+console.log(lunch);
 console.log('Dinner Options:');
-const dinners = getMealsByCategory('dinner');
-console.log(dinners);
+const dinner = getMealsByCategory('dinner');
+console.log(dinner);
+
+handleForm();
