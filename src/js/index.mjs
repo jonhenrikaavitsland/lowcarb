@@ -16,3 +16,9 @@ const allMeals = getAllMealDetails();
 console.log(allMeals);
 
 handleForm();
+
+// Instead of calculating all days at once, do one day per click of button and then store object to array, then display the data for each day below the button.
+// We want to display what meals, per day, total macros per day and price per day, as well as total price for all days combined.
+
+// Also we want to show a shopping list for the days combined.
+//  the list should contain ingredient name, price per kg, and the total weight.
