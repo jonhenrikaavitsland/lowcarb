@@ -1,29 +1,22 @@
 import { aggregateMealMacros } from './aggregateMealMacros.mjs';
 import { aggregateMealPrice } from './aggregateMealPrice.mjs';
+import { formatMacros } from './formatMacros.mjs';
+import { formatPrice } from './formatPrice.mjs';
+import { getMealIngredients } from './getMealIngredients.mjs';
 
 export function processMeal(meal) {
-  const mealIngredients = meal.contains.map((item) => ({
-    name: item.ingredient,
-    weight: item.weight,
-  }));
-
-  const totalMacros = aggregateMealMacros(meal);
-  const totalPrice = aggregateMealPrice(meal);
+  const mealIngredients = getMealIngredients(meal);
+  const totalMacros = formatMacros(aggregateMealMacros(meal));
+  const totalPrice = formatPrice(aggregateMealPrice(meal));
 
   const mealDetails = {
     name: meal.name,
     category: meal.category,
+    isLowCarb: meal.isLowCarb,
     ingredients: mealIngredients,
-    macros: {
-      kcal: parseFloat(totalMacros.kcal.toFixed(2)),
-      fats: parseFloat(totalMacros.fats.toFixed(2)),
-      protein: parseFloat(totalMacros.protein.toFixed(2)),
-      carbohydrates: parseFloat(totalMacros.carbohydrates.toFixed(2)),
-    },
-    price: {
-      cost: parseFloat(totalPrice.toFixed(2)),
-      currency: 'nok',
-    },
+    macros: totalMacros,
+    price: totalPrice,
   };
+
   return mealDetails;
 }

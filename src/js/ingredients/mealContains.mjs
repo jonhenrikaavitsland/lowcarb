@@ -2,6 +2,7 @@ export const mealContains = [
   {
     name: 'omelette w/ almonds on the side',
     category: 'breakfast',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'egg',
@@ -16,6 +17,7 @@ export const mealContains = [
   {
     name: 'salmon filet w/ almonds on the side',
     category: 'breakfast',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'salmon',
@@ -30,6 +32,7 @@ export const mealContains = [
   {
     name: 'mixed salad',
     category: 'side',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'crispi',
@@ -68,6 +71,7 @@ export const mealContains = [
   {
     name: 'omelette w/ broccoli, avocado, salad on the side',
     category: 'lunch',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'egg',
@@ -90,6 +94,7 @@ export const mealContains = [
   {
     name: 'salmon w/ asparagus beans, avocado, salad on the side',
     category: 'lunch',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'salmon',
@@ -112,6 +117,7 @@ export const mealContains = [
   {
     name: 'chicken w/ asparagus beans, avocado, salad on the side',
     category: 'lunch',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'chicken',
@@ -134,6 +140,7 @@ export const mealContains = [
   {
     name: 'neck chops w/ broccoli, avocado, salad on the side',
     category: 'lunch',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'neck chops',
@@ -156,6 +163,7 @@ export const mealContains = [
   {
     name: 'pollock w/ asparagus beans, avocado, salad on the side',
     category: 'lunch',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'pollock',
@@ -178,6 +186,7 @@ export const mealContains = [
   {
     name: 'salmon w/ broccoli, sweet potato on the side',
     category: 'dinner',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'salmon',
@@ -196,6 +205,7 @@ export const mealContains = [
   {
     name: 'chicken w/ asparagus beans, sweet potato on the side',
     category: 'dinner',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'chicken',
@@ -214,6 +224,7 @@ export const mealContains = [
   {
     name: 'barbecue ribs w/ broccoli, sweet potato on the side',
     category: 'dinner',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'barbecue ribs',
@@ -232,6 +243,7 @@ export const mealContains = [
   {
     name: 'pork chops w/ brussels sprouts, sweet potato on the side',
     category: 'dinner',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'pork chops',
@@ -250,6 +262,7 @@ export const mealContains = [
   {
     name: 'beef pepper steak w/ broccoli, sweet potato on the side',
     category: 'dinner',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'beef pepper steak',
@@ -268,6 +281,7 @@ export const mealContains = [
   {
     name: 'entrecote w/ brussels sprouts, sweet potato on the side',
     category: 'dinner',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'entrecote',
@@ -286,6 +300,7 @@ export const mealContains = [
   {
     name: 'omelette w/ broccoli, sweet potato on the side',
     category: 'dinner',
+    isLowCarb: true,
     contains: [
       {
         ingredient: 'egg',

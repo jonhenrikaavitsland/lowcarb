@@ -12,7 +12,6 @@ export const ingredients = {
         fats: 11,
         carbohydrates: 0.3,
       },
-      portionSizes: [56.68],
     },
     {
       name: 'salmon',
@@ -26,7 +25,6 @@ export const ingredients = {
         fats: 17,
         carbohydrates: 4.3,
       },
-      portionSizes: [250, 260, 300],
     },
     {
       name: 'chicken',
@@ -40,7 +38,6 @@ export const ingredients = {
         fats: 2.1,
         carbohydrates: 0,
       },
-      portionSizes: [250, 300],
     },
     {
       name: 'barbecue ribs',
@@ -54,7 +51,6 @@ export const ingredients = {
         fats: 36,
         carbohydrates: 0,
       },
-      portionSizes: [250, 300],
     },
     {
       name: 'neck chops',
@@ -68,7 +64,6 @@ export const ingredients = {
         fats: 14.8,
         carbohydrates: 0.1,
       },
-      portionSizes: [250, 300],
     },
     {
       name: 'pork chops',
@@ -82,7 +77,6 @@ export const ingredients = {
         fats: 18,
         carbohydrates: 0,
       },
-      portionSizes: [250, 300],
     },
     {
       name: 'beef pepper steak',
@@ -96,7 +90,6 @@ export const ingredients = {
         fats: 2.3,
         carbohydrates: 0,
       },
-      portionSizes: [250, 300],
     },
     {
       name: 'entrecote',
@@ -110,7 +103,6 @@ export const ingredients = {
         fats: 11.5,
         carbohydrates: 0,
       },
-      portionSizes: [250, 300],
     },
     {
       name: 'pollock',
@@ -124,7 +116,32 @@ export const ingredients = {
         fats: 0.3,
         carbohydrates: 0,
       },
-      portionSizes: [250, 300],
+    },
+    {
+      name: 'minced meat',
+      price: {
+        perKg: 149.75,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 194,
+        protein: 17,
+        fats: 14,
+        carbohydrates: 0,
+      },
+    },
+    {
+      name: 'patty dough',
+      price: {
+        perKg: 212.25,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 118,
+        protein: 19,
+        fats: 4.7,
+        carbohydrates: 0,
+      },
     },
   ],
   nuts: [
@@ -140,7 +157,6 @@ export const ingredients = {
         fats: 52,
         carbohydrates: 21,
       },
-      portionSizes: [20],
     },
   ],
   vegetables: [
@@ -156,7 +172,6 @@ export const ingredients = {
         fats: 0.5,
         carbohydrates: 2.1,
       },
-      portionSizes: [150],
     },
     {
       name: 'brussels sprouts',
@@ -170,7 +185,6 @@ export const ingredients = {
         fats: 0.5,
         carbohydrates: 4.3,
       },
-      portionSizes: [150],
     },
     {
       name: 'asparagus beans',
@@ -184,7 +198,6 @@ export const ingredients = {
         fats: 0.5,
         carbohydrates: 3,
       },
-      portionSizes: [150],
     },
     {
       name: 'avocado',
@@ -198,7 +211,6 @@ export const ingredients = {
         fats: 19.6,
         carbohydrates: 0.4,
       },
-      portionSizes: [160],
     },
     {
       name: 'sweet potato',
@@ -212,7 +224,6 @@ export const ingredients = {
         fats: 0.1,
         carbohydrates: 20,
       },
-      portionSizes: [300],
     },
   ],
   salad: [
@@ -228,7 +239,6 @@ export const ingredients = {
         fats: 0.1,
         carbohydrates: 1.5,
       },
-      portionSizes: [45],
     },
     {
       name: 'red cherry tomato',
@@ -242,7 +252,6 @@ export const ingredients = {
         fats: 0.2,
         carbohydrates: 2.5,
       },
-      portionSizes: [31.25],
     },
     {
       name: 'cucumber',
@@ -256,7 +265,6 @@ export const ingredients = {
         fats: 0,
         carbohydrates: 3.6,
       },
-      portionSizes: [125],
     },
     {
       name: 'red grapes',
@@ -270,7 +278,6 @@ export const ingredients = {
         fats: 0.2,
         carbohydrates: 13.8,
       },
-      portionSizes: [62.5],
     },
     {
       name: 'red onion',
@@ -284,7 +291,6 @@ export const ingredients = {
         fats: 0.1,
         carbohydrates: 9,
       },
-      portionSizes: [47],
     },
     {
       name: 'yellow or red paprika',
@@ -298,7 +304,6 @@ export const ingredients = {
         fats: 0.2,
         carbohydrates: 4.2,
       },
-      portionSizes: [100],
     },
     {
       name: 'beetroot',
@@ -312,7 +317,6 @@ export const ingredients = {
         fats: 0.2,
         carbohydrates: 8.9,
       },
-      portionSizes: [62.5],
     },
     {
       name: 'celeriac',
@@ -326,7 +330,86 @@ export const ingredients = {
         fats: 0.1,
         carbohydrates: 1.3,
       },
-      portionSizes: [12.5],
+    },
+  ],
+  carbs: [
+    {
+      name: 'spaghetti',
+      price: {
+        perKg: 36.8,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 350,
+        protein: 12,
+        fats: 2,
+        carbohydrates: 69,
+      },
+    },
+    {
+      name: 'whole grain spaghetti',
+      price: {
+        perKg: 40.4,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 346,
+        protein: 12,
+        fats: 3.2,
+        carbohydrates: 63,
+      },
+    },
+    {
+      name: 'fresh tagliatelle',
+      price: {
+        perKg: 98.75,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 285,
+        protein: 10,
+        fats: 3,
+        carbohydrates: 53,
+      },
+    },
+    {
+      name: 'jasmine rice',
+      price: {
+        perKg: 22.15,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 346,
+        protein: 7.1,
+        fats: 0.6,
+        carbohydrates: 78,
+      },
+    },
+    {
+      name: 'basmati rice',
+      price: {
+        perKg: 56.6,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 357,
+        protein: 8.8,
+        fats: 0.5,
+        carbohydrates: 79,
+      },
+    },
+    {
+      name: 'whole grain rice',
+      price: {
+        perKg: 99.8,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 351,
+        protein: 8,
+        fats: 2,
+        carbohydrates: 74,
+      },
     },
   ],
 };
