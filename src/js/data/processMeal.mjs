@@ -10,6 +10,7 @@ export function processMeal(meal) {
   const totalPrice = formatPrice(aggregateMealPrice(meal));
 
   const mealDetails = {
+    id: meal.id,
     name: meal.name,
     category: meal.category,
     isLowCarb: meal.isLowCarb,
