@@ -213,21 +213,6 @@ export const ingredients = {
       },
     },
     {
-      name: 'sweet potato',
-      price: {
-        perKg: 50,
-        currency: 'nok',
-      },
-      macros: {
-        kcal: 85,
-        protein: 1.6,
-        fats: 0.1,
-        carbohydrates: 20,
-      },
-    },
-  ],
-  salad: [
-    {
       name: 'crispi',
       price: {
         perKg: 210.56,
@@ -409,6 +394,127 @@ export const ingredients = {
         protein: 8,
         fats: 2,
         carbohydrates: 74,
+      },
+    },
+    {
+      name: 'sweet potato',
+      price: {
+        perKg: 50,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 85,
+        protein: 1.6,
+        fats: 0.1,
+        carbohydrates: 20,
+      },
+    },
+    {
+      name: 'potato',
+      price: {
+        perKg: 25,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 76,
+        protein: 2,
+        fats: 0.1,
+        carbohydrates: 17,
+      },
+    },
+    {
+      name: 'fries',
+      price: {
+        perKg: 87.78,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 202,
+        protein: 1.7,
+        fats: 8,
+        carbohydrates: 30,
+      },
+    },
+  ],
+  bakery: [
+    {
+      name: 'wholemeal bread',
+      price: {
+        perKg: 70.81,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 223,
+        protein: 8.5,
+        fats: 2.2,
+        carbohydrates: 38.7,
+      },
+    },
+    {
+      name: 'sourdough rolls',
+      price: {
+        perKg: 153.23,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 258,
+        protein: 8,
+        fats: 2.4,
+        carbohydrates: 49,
+      },
+    },
+    {
+      name: 'hamburger bun',
+      price: {
+        perKg: 99.21,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 304,
+        protein: 8.9,
+        fats: 7.4,
+        carbohydrates: 48.4,
+      },
+    },
+    {
+      name: 'coarse sausage bread',
+      price: {
+        perKg: 73.86,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 283,
+        protein: 11.6,
+        fats: 6.1,
+        carbohydrates: 42.6,
+      },
+    },
+    {
+      name: 'spelt lomps',
+      price: {
+        perKg: 112.96,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 194,
+        protein: 6.8,
+        fats: 0.9,
+        carbohydrates: 38.1,
+      },
+    },
+  ],
+  other: [
+    {
+      name: 'crispy fried onions',
+      price: {
+        perKg: 179,
+        currency: 'nok',
+      },
+      macros: {
+        kcal: 618,
+        protein: 3.8,
+        fats: 52,
+        carbohydrates: 32,
       },
     },
   ],

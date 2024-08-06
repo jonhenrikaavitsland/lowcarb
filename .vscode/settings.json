@@ -5,6 +5,6 @@
     "source.fixAll.eslint": "always"
   },
   "eslint.validate": ["javascript"],
-  "cSpell.words": ["aavitsland", "Åvitsland", "basmati", "Carb", "entrecote", "grillribbe", "mochawesome", "tailwindcss"],
+  "cSpell.words": ["aavitsland", "Åvitsland", "basmati", "Carb", "entrecote", "grillribbe", "lomps", "mochawesome", "tailwindcss"],
   "prettier.printWidth": 500
 }
