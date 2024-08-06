@@ -16,6 +16,25 @@
     <main class="grow w-screen">
       <form class="p-10 md:max-w-lg mx-auto">
         <div class="flex flex-col py-2">
+          <label for="day" class="capitalize">Select day:</label>
+          <select name="day" id="day">
+            <option value="1">Day 1</option>
+            <option value="2">Day 2</option>
+            <option value="3">Day 3</option>
+            <option value="4">Day 4</option>
+            <option value="5">Day 5</option>
+            <option value="6">Day 6</option>
+            <option value="7">Day 7</option>
+            <option value="8">Day 8</option>
+            <option value="9">Day 9</option>
+            <option value="10">Day 10</option>
+            <option value="11">Day 11</option>
+            <option value="12">Day 12</option>
+            <option value="13">Day 13</option>
+            <option value="14">Day 14</option>
+          </select>
+        </div>
+        <div class="flex flex-col py-2">
           <label for="breakfast" class="capitalize">Choose a breakfast:</label>
           <select name="breakfast" id="breakfast"></select>
         </div>
@@ -33,7 +52,24 @@
       </form>
       <section>
         <h2 class="text-center uppercase text-2xl font-bold pb-10">Your plan:</h2>
-        <div data-planner="your-plan"></div>
+        <div data-planner="your-plan">
+          <div data-planner="day1"></div>
+          <div data-planner="day2"></div>
+          <div data-planner="day3"></div>
+          <div data-planner="day4"></div>
+          <div data-planner="day5"></div>
+          <div data-planner="day6"></div>
+          <div data-planner="day7"></div>
+          <div data-planner="day8"></div>
+          <div data-planner="day9"></div>
+          <div data-planner="day10"></div>
+          <div data-planner="day11"></div>
+          <div data-planner="day12"></div>
+          <div data-planner="day13"></div>
+          <div data-planner="day14"></div>
+        </div>
+        <h3 class="text-center uppercase text-xl font-bold pt-5">Totals:</h3>
+        <div data-planner="total"></div>
       </section>
     </main>
     <footer class="flex justify-center italic">&copy; <span class="px-1">2024</span><a href="https://www.linkedin.com/in/jon-henrik-aavitsland-abaa872b7/" target="_blank">Jon Henrik Åvitsland</a></footer>
